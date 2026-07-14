@@ -1,1 +1,10 @@
+version: 2
 
+models:
+  - name: gs_basket_prices
+    description: "Practice model for GS basket prices."
+
+    columns:
+      - name: PRICE_DATE
+        tests:
+          - not_null
