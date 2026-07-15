@@ -1,1 +1,14 @@
+name: data_pipeline_test
+version: "1.0.0"
+config-version: 2
 
+profile: default
+
+model-paths:
+  - models_sandbox
+
+target-path: target
+
+clean-targets:
+  - target
+  - dbt_packages
