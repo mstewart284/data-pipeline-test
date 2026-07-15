@@ -10,3 +10,4 @@ select
     load_ts
 from {{ source('marquee_data', 'GS_BASKET_PRICES') }}
 where price_date >= dateadd(day, -90, current_date)
+limit 1000
